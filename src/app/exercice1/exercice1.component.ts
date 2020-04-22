@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class Exercice1Component implements OnInit {
   public compteur: number = 0; 
 
+  public result : number = 0;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  modifValueCompteur(event){
+  	this.result= event.value;
   }
 
 }
